@@ -4,6 +4,7 @@ run "if uname | grep -q 'Darwin'; then pgrep spring | xargs kill -9; fi"
 ########################################
 inject_into_file "Gemfile", before: "group :development, :test do" do
   <<~RUBY
+    gem "pg", "~> 1.4"
     gem "bootstrap", "~> 5.2"
     gem "devise"
     gem "autoprefixer-rails"
@@ -21,9 +22,10 @@ end
 # Assets
 ########################################
 run "rm -rf app/assets/stylesheets"
-run "curl -L https://example.com/stylesheets.zip > stylesheets.zip" # URL personnalisée
-run "unzip stylesheets.zip -d app/assets && rm -f stylesheets.zip"
-
+run "rm -rf vendor"
+run "curl -L https://github.com/lewagon/rails-stylesheets/archive/master.zip > stylesheets.zip"
+run "unzip stylesheets.zip -d app/assets && rm -f stylesheets.zip && rm -f app/assets/rails-stylesheets-master/README.md"
+run "mv app/assets/rails-stylesheets-master app/assets/stylesheets"
 # Layout
 ########################################
 gsub_file(
