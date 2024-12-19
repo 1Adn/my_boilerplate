@@ -81,7 +81,7 @@ end
 # README
 ########################################
 markdown_file_content = <<~MARKDOWN
-  Rails app generated with a custom boilerplate template for Ruby on Rails.
+  Rails app generated with a custom template for Ruby on Rails.
 MARKDOWN
 file "README.md", markdown_file_content, force: true
 

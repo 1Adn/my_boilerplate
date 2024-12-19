@@ -1,6 +1,6 @@
-# 🚀 Ruby on Rails Boilerplate
+# 🚀 Ruby on Rails template
 
-A custom Ruby on Rails boilerplate designed to help you kickstart your projects with pre-configured tools and settings.
+A custom Ruby on Rails template designed to help you kickstart your projects with pre-configured tools and settings.
 
 ---
 
@@ -8,7 +8,7 @@ A custom Ruby on Rails boilerplate designed to help you kickstart your projects 
 
 ### **Gem Configuration**
 
-This boilerplate includes essential gems for rapid development:
+This template includes essential gems for rapid development:
 
 - **[PostgreSQL](https://www.postgresql.org/docs/):** Relational database.
 - **[Bootstrap](https://getbootstrap.com/):** Pre-installed Bootstrap 5 for responsive design.
@@ -57,19 +57,19 @@ Ensure you have the following installed:
 
 ### Setting Up a New Project
 
-1. Clone this repository or download the `boilerplate.rb` file:
+1. Clone this repository or download the `template.rb` file:
 
    ```bash
-   git clone https://github.com/1Adn/rails-boilerplate.git
+   git clone https://github.com/1Adn/my_template
    ```
 
-2. Create a new Rails project using the boilerplate script directly:
+2. Create a new Rails project using the template script directly:
 
    ```bash
-   rails new my_project_name -d postgresql -m https://raw.githubusercontent.com/1Adn/rails-boilerplate/master/boilerplate.rb
+   rails new my_project_name -d postgresql -m https://github.com/1Adn/my_template/blob/main/boilerplate.rb
    ```
 
-3. Let the boilerplate do its magic! It will:
+3. Let the template do its magic! It will:
 
    - Install and configure gems.
    - Create a PagesController with a home action.
@@ -120,7 +120,7 @@ Ensure you have the following installed:
 
 ### 🛠 Database Configuration
 
-This boilerplate uses **PostgreSQL** as the default database. Ensure you have PostgreSQL installed and running on your system.
+This template uses **PostgreSQL** as the default database. Ensure you have PostgreSQL installed and running on your system.
 
 1. Update your `config/database.yml` if needed:
 
