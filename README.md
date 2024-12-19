@@ -66,7 +66,7 @@ Ensure you have the following installed:
 2. Create a new Rails project using the template script directly:
 
    ```bash
-   rails new my_project_name -d postgresql -m https://github.com/1Adn/my_template/blob/main/boilerplate.rb
+   rails new my_project_name -d postgresql -m https://raw.githubusercontent.com/1Adn/my_template/refs/heads/main/template.rb
    ```
 
 3. Let the template do its magic! It will:
