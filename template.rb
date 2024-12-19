@@ -122,6 +122,14 @@ after_bundle do
     end
   RUBY
 
+  # ApplicationController
+  run "rm app/controllers/application_controller.rb"
+  file "app/controllers/application_controller.rb", <<~RUBY
+    class ApplicationController < ActionController::Base
+      before_action :authenticate_user!
+    end
+  RUBY
+
   # Environments
   environment 'config.action_mailer.default_url_options = { host: "http://localhost:3000" }', env: "development"
 
